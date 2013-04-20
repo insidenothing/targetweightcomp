@@ -80,7 +80,7 @@
 			
 			<tr>
 				<td>Nickname</td>
-				<td></td>
+				<td><input type="input"></td>
 			</tr>
 			
 			<tr>
@@ -96,6 +96,10 @@
 			<tr>
 				<td>Target Goal</td>
 				<td><input type="input"><select><option value="pounds">lbs.</option><option value="precent">%</option></select><select><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
+			</tr>
+			<tr>
+				<td>Ok so lets begin...</td>
+				<td><input type="submit" value="Start a new group or join a public group."></td>
 			</tr>
 		</table>
 		<code>Welcome family and friends, I have not shown this to anyone yet so.... if you found it, go ahead and poke around!</code>
