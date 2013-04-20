@@ -70,9 +70,34 @@
 	<h1>Welcome to TargetWeightComp.com</h1>
 
 	<div id="body">
-		<p>This site will be dedicated to thoes frendly competitions, for what we will call "health points", most groups play for around 100.</p>
-
-		
+		<p>This site will be dedicated to thoes frendly competitions, for what we will call "health points", most will play for around 100.</p>
+		<p>So the only questions to answer are:</p>
+		<table>
+			<tr>
+				<td>E-Mail</td>
+				<td><input type="input"></td>
+			</td>
+			
+			<tr>
+				<td>Nickname</td>
+				<td></td>
+			</td>
+			
+			<tr>
+				<td>Target Date</td>
+				<td><input type="input"></td>
+			</td>
+			
+			<tr>
+				<td>Current Weight</td>
+				<td><input type="input"></td>
+			</td>
+			
+			<tr>
+				<td>Target Goal</td>
+				<td><input type="input"><select><option value="pounds">lbs.</option><option value="precent">%</option></select><select><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
+			</td>
+			
 		<code>Welcome family and friends, I have not shown this to anyone yet so.... if you found it, go ahead and poke around!</code>
 
 
