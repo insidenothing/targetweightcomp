@@ -75,7 +75,12 @@ showButtonPanel: true
 </script>
 </head>
 <body>
-
+<script>
+function updateGoal(){
+	var goal = document.querySelector('#goal').value;
+	alert(goal);
+}
+</script>
 <div id="container">
 	<h1>Welcome to TargetWeightComp.com</h1>
 
@@ -105,7 +110,7 @@ showButtonPanel: true
 			
 			<tr>
 				<td>Target Goal</td>
-				<td><input type="input"><select><option value="pounds">lbs.</option><option value="precent">%</option></select><select><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
+				<td><input id="goal" onKeyUp="updateGoal();" type="input"><select><option value="pounds">lbs.</option><option value="precent">%</option></select><select><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
 			</tr>
 			<tr>
 				<td>Ok so lets begin...</td>
