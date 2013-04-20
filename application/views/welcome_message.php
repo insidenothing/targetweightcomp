@@ -76,28 +76,28 @@
 			<tr>
 				<td>E-Mail</td>
 				<td><input type="input"></td>
-			</td>
+			</tr>
 			
 			<tr>
 				<td>Nickname</td>
 				<td></td>
-			</td>
+			</tr>
 			
 			<tr>
 				<td>Target Date</td>
 				<td><input type="input"></td>
-			</td>
+			</tr>
 			
 			<tr>
 				<td>Current Weight</td>
 				<td><input type="input"></td>
-			</td>
+			</tr>
 			
 			<tr>
 				<td>Target Goal</td>
 				<td><input type="input"><select><option value="pounds">lbs.</option><option value="precent">%</option></select><select><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
-			</td>
-			
+			</tr>
+		</table>
 		<code>Welcome family and friends, I have not shown this to anyone yet so.... if you found it, go ahead and poke around!</code>
 
 
