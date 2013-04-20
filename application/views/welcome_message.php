@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to TargetWeightComp.com</title>
-
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 	<style type="text/css">
 
 	::selection{ background-color: #E13300; color: white; }
@@ -63,6 +65,14 @@
 		-webkit-box-shadow: 0 0 8px #D0D0D0;
 	}
 	</style>
+	 <script>
+$(function() {
+$( "#datepicker" ).datepicker({
+numberOfMonths: 3,
+showButtonPanel: true
+});
+});
+</script>
 </head>
 <body>
 
@@ -85,7 +95,7 @@
 			
 			<tr>
 				<td>Target Date</td>
-				<td><input type="input"></td>
+				<td><input type="text" id="datepicker" /></td>
 			</tr>
 			
 			<tr>
