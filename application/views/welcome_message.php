@@ -78,7 +78,13 @@ showButtonPanel: true
 <script>
 function updateGoal(){
 	var goal = document.querySelector('#goal').value;
-	alert(goal);
+	
+	document.getElementById('final').innerHTML = goal;
+	//alert(goal);
+}
+function updateDate(){
+	var datepicker = document.querySelector('#datepicker').value;
+	document.getElementById('date').innerHTML = datepicker;
 }
 </script>
 <div id="container">
@@ -100,7 +106,7 @@ function updateGoal(){
 			
 			<tr>
 				<td>Target Date</td>
-				<td><input type="text" id="datepicker" /></td>
+				<td><input type="text" id="datepicker" onKeyUp="updateDate();" /></td>
 			</tr>
 			
 			<tr>
@@ -117,7 +123,7 @@ function updateGoal(){
 				<td><input type="submit" value="Start a new group or join a public group."></td>
 			</tr>
 		</table>
-		<code>Welcome family and friends, I have not shown this to anyone yet so.... if you found it, go ahead and poke around!</code>
+		<code>Final weight at <span id="final"></span> on  <span id="date"></span></code>
 
 
 		
