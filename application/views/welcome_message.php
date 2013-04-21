@@ -81,7 +81,7 @@ function updateEnd(){
 	var datepicker = document.querySelector('#datepicker').value;
 	var datepicker = document.querySelector('#type').value;
 	var direction = document.querySelector('#direction').value;
-	document.getElementById('final').innerHTML = goal + '' + datepicker;
+	document.getElementById('final').innerHTML = goal + ' ' + datepicker + ' ' + type + ' ' + direction;
 }
 </script>
 <div id="container">
