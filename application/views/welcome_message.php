@@ -76,15 +76,12 @@ showButtonPanel: true
 </head>
 <body>
 <script>
-function updateGoal(){
+function updateEnd(){
 	var goal = document.querySelector('#goal').value;
-	
-	document.getElementById('final').innerHTML = goal;
-	//alert(goal);
-}
-function updateDate(){
 	var datepicker = document.querySelector('#datepicker').value;
-	document.getElementById('date').innerHTML = datepicker;
+	var datepicker = document.querySelector('#type').value;
+	var direction = document.querySelector('#direction').value;
+	document.getElementById('final').innerHTML = goal + '' + datepicker;
 }
 </script>
 <div id="container">
@@ -106,7 +103,7 @@ function updateDate(){
 			
 			<tr>
 				<td>Target Date</td>
-				<td><input type="text" id="datepicker" onKeyUp="updateDate();" /></td>
+				<td><input type="text" id="datepicker" onBlur="updateEnd();" /></td>
 			</tr>
 			
 			<tr>
@@ -116,14 +113,14 @@ function updateDate(){
 			
 			<tr>
 				<td>Target Goal</td>
-				<td><input id="goal" onKeyUp="updateGoal();" type="input"><select><option value="pounds">lbs.</option><option value="precent">%</option></select><select><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
+				<td><input id="goal" onKeyUp="updateEnd();" type="input"><select id="type"><option value="pounds">lbs.</option><option value="precent">%</option></select><select id="direction"><option>Loss</option><option>Gain</option><option>Hold</option></select></td>
 			</tr>
 			<tr>
 				<td>Ok so lets begin...</td>
-				<td><input type="submit" value="Start a new group or join a public group."></td>
+				<td><input type="submit" value="Start a new group, join a public group or enter invite code for private group."></td>
 			</tr>
 		</table>
-		<code>Final weight at <span id="final"></span> on  <span id="date"></span></code>
+		<code><span id="final"></span></code>
 
 
 		
